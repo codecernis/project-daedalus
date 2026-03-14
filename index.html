@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Chong | Project Daedalus</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="progress-bar"></div>
+    <canvas id="particles"></canvas>
+
+<!-- Navigation -->
+<nav id="navbar">
+    <a href="#hero" class="nav-logo">{KC}</a>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">Light</button>
+</nav>
+
+ <!-- Hero Section -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Kyle Chong.</h1>
+      <h2 class="hero-tagline" id="typed-text"></h2>
+      <p class="hero-description">
+        Data Analyst. Aspiring Quant.
+        Building Algorithms and Learning in Real-Time.
+      </p>
+    </div>
+    <div class="hero-image">
+      <img src="Photos/profile.jpg" alt="Kyle Chong">
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2 class="section-title"><span class="section-number">01.</span> Intercepted Transmission</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <p>
+                Trained in Computer Science, Deployed at <strong>United Overseas Bank</strong> and <strong>PETRONAS</strong>. 
+                Occasionally useful at intersecting data, finance, and technology.
+            </p>
+
+            <p>
+                Currently on a mission to build a walk-forward optimisation backtesting engine
+                for Bitcoin trading (Project Argus) which is a fancy way of saying I'm teaching a machine
+                to lose money more efficiently. The long game is quantitative finance. The short game is
+                figuring out why my code broke again.
+            </p>
+
+            <p>
+                Off-duty, I'm reading manhwa, auditing coffee shops for research purposes, or getting
+                my ego recalibrated in martial arts or video games.
+            </p>
+
+        </div>
+
+        <div class="about-skills">
+            <h3 class="skills-heading">Tech I Supposedly Should Know</h3>
+            
+            <p class="skills-category">Programming Languages</p>
+            <div class="skills-grid">
+                <span class="skill-chip">Python</span>
+                <span class="skill-chip">SQL</span>
+                <span class="skill-chip">R</span>
+                <span class="skill-chip">HTML</span>
+                <span class="skill-chip">CSS</span>
+                <span class="skill-chip">JavaScript</span>
+            </div>
+
+            <p class="skills-category">Microsoft & BI Tools</p>
+            <div class="skills-grid">
+                <span class="skill-chip">Excel</span>
+                <span class="skill-chip">PowerBI</span>
+                <span class="skill-chip">PowerApps</span>
+                <span class="skill-chip">Power Query</span>
+            </div>
+
+            <p class="skills-category">Technology</p>
+            <div class="skills-grid">
+                <span class="skill-chip">Docker</span>
+                <span class="skill-chip">Git</span>
+            </div>
+        </div>
+    </div>    
+
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2 class="section-title"><span class="section-number">02.</span> Mission Control</h2>
+    <div class="projects-grid">
+        <article class="project-card">
+            <h3 class="project-title">Project Argus</h3>
+            <p class="project-description">
+                A containerised Walk-Forward Optimisation backtesting engine for Bitcoin 
+                trading using Random Forest classifiers. The idea is simple — feed a machine historical price 
+                data and let it figure out when to buy and sell. The reality is less simple. Currently my most 
+                ambitious project and my gateway drug into quantitative finance, machine learning, and 
+                questioning my life choices at 2am.
+            </p>
+
+            <div class="project-tech">
+                <span>Python</span>
+                <span>scikit-learn</span>
+                <span>Docker</span>
+                <span>Random Forest</span>
+                <span>Backtesting</span>
+                <span>Quantitative Finance</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <h3 class="project-title">Project Virtual Air</h3>
+            <p class="project-description">
+                An air quality forecasting system built on Beijing's pollution data from 
+                2013 to 2017. Pitted four machine learning models against each other — Random Forest, 
+                Support Vector Machine, Linear Regression, and Neural Networks — to see which could 
+                best predict air quality. My thesis project for my Bachelor's degree, and my first real proof 
+                that I could make data do something useful beyond Excel charts.
+            </p>
+
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Random Forest</span>
+                <span>SVM</span>
+                <span>Linear Regression</span>
+                <span>Neural Networks</span>
+                <span>KDD Methodology</span>
+            </div>
+        </article>
+
+            <article class="project-card">
+                <h3 class="project-title">MAMAPRENEUR</h3>
+                <p class="project-description">
+                    A CSR initiative through UOB's FSTEP programme where we worked 
+                    with B40 single mothers to expand their business networks and marketing reach. 
+                    Coordinated across trainees and associates from multiple banks and financial institutions. 
+                    Secured a Sky Luge brand campaign and retail partnerships that translated directly into 
+                    income for participants. The rare project where the KPIs actually mattered to real people.
+                </p>
+
+                <div class="project-tech">
+                    <span>CSR</span>
+                    <span>Financial Literacy</span>
+                    <span>Stakeholder Management</span>
+                    <span>Brand Partnerships</span>
+                    <span>SDG Goals</span>
+                </div>
+            </article>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2 class="section-title"><span class="section-number">03.</span> Navigational Satellite</h2>
+    <p class="contact-text">
+        Currently open to new opportunities - especially if data and finance
+        are involved. Whether you want to collaborate, chat, or just say hi,
+        my inbox is always open. I'm a chatty guy.
+    </p>
+
+      <a href="mailto:chongkyle7114@gmail.com" class="contact-btn">Say Hello</a>
+        <div class="contact-socials">
+            <a href="https://github.com/codecernis" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/chongkyle7114" target="_blank">LinkedIn</a>
+        </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <p>Designed & Built by Kyle Chong</p>
+</footer>
+
+<button id="back-to-top">↑</button>
+<script src="script.js"></script>
+
+</body>
+</html>
