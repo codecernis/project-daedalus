@@ -812,3 +812,33 @@ function drawSolarSystem() {
 
 initExpShip();
 drawSolarSystem();
+
+// Experience card scramble
+var expRole = document.getElementById('exp-role');
+var expCompany = document.getElementById('exp-company');
+expRole.setAttribute('data-text', expRole.textContent);
+expCompany.setAttribute('data-text', expCompany.textContent);
+
+expCard.addEventListener('mouseenter', function() {
+  expRole.setAttribute('data-text', expRole.textContent);
+  expCompany.setAttribute('data-text', expCompany.textContent);
+  scrambleElement(expRole, 0);
+  scrambleElement(expCompany, 100);
+});
+
+// Experience card tilt
+expCard.addEventListener('mousemove', function(e) {
+  var rect = expCard.getBoundingClientRect();
+  var x = e.clientX - rect.left;
+  var y = e.clientY - rect.top;
+  var centerX = rect.width / 2;
+  var centerY = rect.height / 2;
+  var rotateX = (y - centerY) / centerY * -5;
+  var rotateY = (x - centerX) / centerX * 5;
+
+  expCard.style.transform = 'perspective(600px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+});
+
+expCard.addEventListener('mouseleave', function() {
+  expCard.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg)';
+});
