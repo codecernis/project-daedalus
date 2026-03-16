@@ -315,6 +315,7 @@ body.light .skills-category { color: #8839ef; }
 
 /* Experience */
 #experience {
+  text-align: center;
   padding: 80px 40px;
 }
 
